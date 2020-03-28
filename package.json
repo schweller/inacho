@@ -1,0 +1,9 @@
+{
+  "name": "inacho",
+  "version": "1.0.0",
+  "description": "Try npx inacho",
+  "main": "index.js",
+  "repository": "git@github.com:schweller/inacho.git",
+  "author": "Inácio Schweller <iscmendonca@gmail.com>",
+  "license": "MIT"
+}
