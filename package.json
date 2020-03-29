@@ -1,9 +1,26 @@
 {
   "name": "inacho",
-  "version": "1.0.0",
-  "description": "Try npx inacho",
-  "main": "index.js",
-  "repository": "git@github.com:schweller/inacho.git",
-  "author": "Inácio Schweller <iscmendonca@gmail.com>",
-  "license": "MIT"
+  "version": "1.0.1",
+  "description": "https://inacio.dev on your terminal",
+  "license": "MIT",
+  "repository": "schweller/inacho",
+  "bin": {
+    "inacho": "src/index.js"
+  },
+	"author": {
+		"name": "Inácio Schweller",
+		"email": "iscmendonca@gmail.com",
+		"url": "https://inacio.dev"
+	},  
+  "files": [
+    "src"
+  ],
+  "keywords": ["inacho", "schweller", "cli", "cli-app"],
+  "dependencies": {
+    "import-jsx": "^4.0.0",
+    "ink": "^2.7.1",
+    "ink-select-input": "^3.1.2",
+    "open": "^7.0.3",
+    "react": "^16.13.1"
+  }
 }
