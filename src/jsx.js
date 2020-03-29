@@ -1,5 +1,7 @@
 'use strict';
 
+process.env.NODE_ENV = process.env.NODE_ENV || 'production';
+
 const React = require('react');
 const open = require('open')
 const { render, Box, Text, Color } = require('ink')
@@ -29,22 +31,28 @@ const Main = () => {
 	};
 
 	const items = [{
-		label: 'Github',
+    label: 'Github',
+    value: 'first',
     link: 'https://github.com/schweller'
 	}, {
-		label: 'Codepen',
+    label: 'Codepen',
+    value: 'second',
     link: 'https://codepen.io/schweller'
 	}, {
-		label: 'My games',
+    label: 'My games',
+    value: 'third',
     link: 'https://thesunda.itch.io/'
   }, {
-		label: 'LinkedIn',
+    label: 'LinkedIn',
+    value: 'fourth',
     link: 'https://www.linkedin.com/in/ischweller/'
 	}, {
-		label: 'Stack Overflow',
+    label: 'Stack Overflow',
+    value: 'fifth',    
     link: 'https://stackoverflow.com/users/4957796/inacio-schweller'
   }, {
-		label: 'Full resume',
+    label: 'Full resume',
+    value: 'sixth',    
     link: 'https://inacio.dev/inacio-schweller-resume.pdf'
   }
 ];
@@ -57,7 +65,10 @@ const Main = () => {
       <Box marginBottom={1}>
         <Text><Color hex="#b12b2b" bold>You'll find me:</Color></Text>
       </Box>
-      <SelectInput items={items} onSelect={handleSelect} indicatorComponent={Indicator} itemComponent={Item}/>
+      <SelectInput items={items} onSelect={handleSelect} indicatorComponent={Indicator} itemComponent={Item} />
+      <Box marginTop={1}>
+        <Text bold><Color hex="#b12b2b" bold>Terminal version of https://inacio.dev/</Color></Text>
+      </Box>      
     </Box>
   )
 };
